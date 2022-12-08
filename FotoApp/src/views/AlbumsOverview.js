@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import AlbumIcon from "../compontents/AlbumIcon";
 import AlbumNameForm from "../compontents/AlbumNameForm";
+//no
 
 export default function () {
   const [albums, setAlbums] = useState([]);
