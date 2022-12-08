@@ -27,13 +27,13 @@ export default function () {
    */
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:4400/photos/${photoId}`)
+    fetch(`http://127.0.0.1:1234/photos/${photoId}`)
       .then((response) => response.json())
       .then((data) => setPhoto(data));
   }, [photoId]);
 
   const clickHandler = () => {
-    fetch(`http://127.0.0.1:4400/photos/${photoId}`, {
+    fetch(`http://127.0.0.1:1234/photos/${photoId}`, {
       method: "DELETE",
     }).then((response) => {
       if (response.status === 202) {

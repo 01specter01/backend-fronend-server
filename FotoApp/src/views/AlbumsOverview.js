@@ -8,7 +8,7 @@ export default function () {
   const [albums, setAlbums] = useState([]);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:4400/albums`)
+    fetch(`http://127.0.0.1:1234/albums`)
       .then((response) => response.json())
       .then((data) => setAlbums(data));
   }, []);
@@ -18,7 +18,7 @@ export default function () {
       name: album,
       photos: [],
     };
-    fetch("http://127.0.0.1:4400/albums", {
+    fetch("http://127.0.0.1:1234/albums", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
